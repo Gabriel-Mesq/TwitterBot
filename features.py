@@ -19,3 +19,8 @@ def weather(city):
 
     return f"Clima do país {city} no dia {current_time.day}/{current_time.month}/{current_time.year}, às {current_time.hour}:{current_time.minute}:\n{temperature}°C - {description}"
 
+def music():
+
+    with open('playlist.txt', 'r', encoding='utf-8') as r:
+        return f'Minha recomendação de música para você é: {random.choice(r.readlines())}'
+
