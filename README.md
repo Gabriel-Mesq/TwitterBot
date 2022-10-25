@@ -14,3 +14,9 @@
 24/10/22:
 
 * The bot now has a 69% chance of replying to a tweet (Previously it would reply to 100% of the user's tweets)
+
+25/10/22:
+
+*The bot is now able to do song recommendations. To do so:
+  * Mention the bot
+  * Have the word "music" anywhere on the tweet
