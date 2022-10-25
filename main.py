@@ -29,7 +29,7 @@ if initialisation_resp.data != None:
 # Looking for mentions tweets in an endless loop
 while True:
     
-    #Check if weather was requested
+    #Check if weather/song was requested
     mentions = client.get_users_mentions(Minovsky, since_id=start_id)
     
     if mentions.data != None:
@@ -38,6 +38,9 @@ while True:
                 if 'tempo' in tweet.text:
                     city = tweet.text.split()[-1]
                     client.create_tweet(in_reply_to_tweet_id=tweet.id, text=weather(city))
+                    start_id = tweet.id
+                if 'music' or 'musica' or 'música' in tweet.text.lower():
+                    client.create_tweet(in_reply_to_tweet_id=tweet.id, text=music())
                     start_id = tweet.id
             except Exception as error:
                 print(error)
