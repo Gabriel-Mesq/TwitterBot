@@ -35,12 +35,13 @@ while True:
     if mentions.data != None:
         for tweet in  mentions.data:
             try:
-                if 'tempo' in tweet.text:
+                twt = tweet.text.lower()
+                if 'music' in twt or 'musica' in twt or 'música' in twt:
+                    client.create_tweet(in_reply_to_tweet_id=tweet.id, text=music())
+                    start_id = tweet.id
+                elif 'tempo' in twt:
                     city = tweet.text.split()[-1]
                     client.create_tweet(in_reply_to_tweet_id=tweet.id, text=weather(city))
-                    start_id = tweet.id
-                if 'music' or 'musica' or 'música' in tweet.text.lower():
-                    client.create_tweet(in_reply_to_tweet_id=tweet.id, text=music())
                     start_id = tweet.id
             except Exception as error:
                 print(error)
