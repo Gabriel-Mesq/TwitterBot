@@ -18,11 +18,11 @@ auth = tweepy.OAuth1UserHandler(api_key, api_secret, access_token, access_token_
 api = tweepy.API(auth)
 
 # Getting the bot's unique ID
-Minovsky = client.get_me().data.id
+bot = client.get_me().data.id
 
 # Hinders the bot from replying to old tweets
 start_id = 1
-initialisation_resp = client.get_users_tweets(Minovsky)
+initialisation_resp = client.get_users_tweets(bot)
 if initialisation_resp.data != None:
     start_id = initialisation_resp.data[0].id
 
@@ -30,7 +30,7 @@ if initialisation_resp.data != None:
 while True:
     
     #Check if weather/song was requested
-    mentions = client.get_users_mentions(Minovsky, since_id=start_id)
+    mentions = client.get_users_mentions(bot, since_id=start_id)
     
     if mentions.data != None:
         for tweet in  mentions.data:
@@ -55,7 +55,7 @@ while True:
             for tweet in response.data:
                 try:
                     if random.random() <= .70:
-                        answer = bruh[random.randint(0, len(msg)-1)]
+                        answer = msg[random.randint(0, len(msg)-1)]
                         print('Tweet: ', tweet.text, '\nResp: ', answer, '\n')
                         client.create_tweet(in_reply_to_tweet_id=tweet.id, text=answer)
                         start_id = tweet.id
