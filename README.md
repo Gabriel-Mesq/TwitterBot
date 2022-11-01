@@ -1,5 +1,5 @@
 # TwitterBot
- Um bot de interações com meus amigos no Twitter.
+Um bot de interações com meus amigos no Twitter. Sempre que um usuário pertencente a lista do bot realiza um tweet (excluindo replies e retweets), o bot irá responder o tweet com uma mensagem aleatória dentre uma lista de opções.
 
 
 ### Updates:
