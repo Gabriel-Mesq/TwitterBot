@@ -47,7 +47,7 @@ while True:
                 print(error)
   
     #Searches for my friends new tweets
-    for i in range(len(amgs)):
+    for i in range(len(friends)):
         
         response = client.get_users_tweets(amgs[i], exclude=['replies', 'retweets'], since_id=start_id)
 
@@ -55,7 +55,7 @@ while True:
             for tweet in response.data:
                 try:
                     if random.random() <= .70:
-                        answer = bruh[random.randint(0, len(bruh)-1)]
+                        answer = bruh[random.randint(0, len(msg)-1)]
                         print('Tweet: ', tweet.text, '\nResp: ', answer, '\n')
                         client.create_tweet(in_reply_to_tweet_id=tweet.id, text=answer)
                         start_id = tweet.id
