@@ -1,7 +1,7 @@
 from weather import *
 
 #List your friend's ID
-amgs = [ ] 
+friends = [ ] 
 
 # Messages to reply with if someone mentions the bot
-bruh = [' ']
+msgs = [' ']
