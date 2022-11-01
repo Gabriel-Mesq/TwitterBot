@@ -1,5 +1,5 @@
 # TwitterBot
-Um bot de interações com meus amigos no Twitter. Sempre que um usuário pertencente a lista do bot realiza um tweet (excluindo replies e retweets), o bot irá responder o tweet com uma mensagem aleatória dentre uma lista de opções.
+Um bot de interações com meus amigos. Sempre que um usuário pertencente a lista do bot realiza um tweet (excluindo replies e retweets), o bot responde com uma mensagem aleatória dentre uma lista de opções.
 
 
 ### Updates:
@@ -20,3 +20,7 @@ Um bot de interações com meus amigos no Twitter. Sempre que um usuário perten
 *The bot is now able to do song recommendations. To do so:
   * Mention the bot
   * Have the word "music" anywhere on the tweet
+
+29/10/22:
+ * The bot is now online 24/7, thanks for squarecloud.app
+ * The bot now has a 25% chance of replying to a tweet (Previously 69%)
