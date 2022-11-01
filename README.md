@@ -22,5 +22,5 @@ Um bot de interações com meus amigos. Sempre que um usuário pertencente a lis
   * Have the word "music" anywhere on the tweet
 
 29/10/22:
- * The bot is now online 24/7, thanks for squarecloud.app
+ * The bot is now hosted online 24/7
  * The bot now has a 25% chance of replying to a tweet (Previously 69%)
