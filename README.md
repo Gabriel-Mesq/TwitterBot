@@ -2,6 +2,16 @@
 Um bot de interações com meus amigos. Sempre que um usuário pertencente a lista do bot realiza um tweet (excluindo replies e retweets), o bot responde com uma mensagem aleatória dentre uma lista de opções.
 
 
+## O que aprendi com esse projeto:
+
+* Twitter API
+* Implementação de módulos, metódos e bibliotecas externas 
+* Credenciamento (api_key, bearer_token, access_token, auth e etc)
+* Hospedagem de BOTs
+* Funcionamento de requests em aplicações de larga escala
+* Estudo de documentações
+* Principais algoritmos "random"
+
 ### Updates:
 
 23/10/22:
