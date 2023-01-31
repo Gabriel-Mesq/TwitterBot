@@ -23,7 +23,7 @@ Um bot de interações com meus amigos. Sempre que um usuário pertencente a lis
 
 24/10/22:
 
-* The bot now has a 69% chance of replying to a tweet (Previously it would reply to 100% of the user's tweets)
+* The bot now has a 70% chance of replying to a tweet (Previously it would reply to 100% of the user's tweets)
 
 25/10/22:
 
@@ -33,4 +33,4 @@ Um bot de interações com meus amigos. Sempre que um usuário pertencente a lis
 
 29/10/22:
  * The bot is now hosted online 24/7
- * The bot now has a 25% chance of replying to a tweet (Previously 69%)
+ * The bot now has a 10% chance of replying to a tweet (Previously 70%)
